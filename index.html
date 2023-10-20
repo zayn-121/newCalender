@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="evo-calendar.min.css" />
+    <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css" />
+    <link rel="stylesheet" href="evo-calendar.orange-coral.min.css" />
+
+    <title>Calendar</title>
+  </head>
+  <body>
+
+    <div class="logo">
+      <img src="/CAL BANNER.png"></img>
+    </div>
+    <div class="hero">
+      <div id="calendar"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="evo-calendar.min.js"></script>
+
+    <script>
+            $(document).ready(function () {
+              $("#calendar").evoCalendar({
+
+                  theme: "Midnight Blue", // theme name: "Midnight Blue" & "Orange Coral"
+                calendarEvents: [
+                  {
+                    id: "event1", // Event's ID (required)
+                    name: "", // Event name (required)
+                    description: " “Celebrate endings—for they precede new beginnings.” —Jonathan Lockwood Huie",
+                    date: "January/1/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event2", // Event's ID (required)
+                    name: " National Wildlife week celebration at TSZS", // Event name (required)
+                    description: " National Wildlife week celebration at TSZS",
+                    date: ["October/1/2023", "Oct/7/2023"], // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event3", // Event's ID (required)
+                    name: "Gandhi Jayanti, Swachhata Hi Seva programmes", // Event name (required)
+                    description: "Gandhi Jayanti, Swachhata Hi Seva programmes",
+                    date: "October/2/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event4", // Event's ID (required)
+                    name: " JFC Media Meet & Greet", // Event name (required)
+                    description: " JFC Media Meet & Greet",
+                    date: "October/3/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event5", // Event's ID (required)
+                    name: "Integrated Online Sports Portal launch", // Event name (required)
+                    description: "Integrated Online Sports Portal launch",
+                    date: "October/3/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event6", // Event's ID (required)
+                    name: " World Animal Welfare Day", // Event name (required)
+                    description: " World Animal Welfare Day",
+                    date: "October/4/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event7", // Event's ID (required)
+                    name: "Inauguration of lifts at JRD Tata Sports Complex and Flatlets", // Event name (required)
+                    description: "Inauguration of lifts at JRD Tata Sports Complex and Flatlets",
+                    date:  "October/4/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event8", // Event's ID (required)
+                    name: "First Home Match of JFC with Hyderabad", // Event name (required)
+                    description: "First Home Match of JFC with Hyderabad",
+                    date: "October/5/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event9", // Event's ID (required)
+                    name: "Mar 9 Senior Citizens Fun & Fitness League", // Event name (required)
+                    description: "Mar 9 Senior Citizens Fun & Fitness League",
+                    date: "October/7/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event10", // Event's ID (required)
+                    name: " Tripartite Meeting of RM at Ranchi", // Event name (required)
+                    description: " Tripartite Meeting of RM at Ranchi",
+                    date: "October/7/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event11", // Event's ID (required)
+                    name: "PC of Tata Steel Open National Athletics Championship at JRD Tata Sports Complex", // Event name (required)
+                    description: "PC of Tata Steel Open National Athletics Championship at JRD Tata Sports Complex",
+                    date:"October/7/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event12", // Event's ID (required)
+                    name: "GT'73 Batch visit to Jsr", // Event name (required)
+                    description: "GT'73 Batch visit to Jsr",
+                    date: ["October/5/2023", "October/8/2023"], // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event13", // Event's ID (required)
+                    name: "World Post Day", // Event name (required)
+                    description: "World Post Day",
+                    date: "October/9/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event14", // Event's ID (required)
+                    name: "Biodiversity Workshop for Senior Leadership of Tata Steel", // Event name (required)
+                    description: "Biodiversity Workshop for Senior Leadership of Tata Steel",
+                    date:"October/9/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event15", // Event's ID (required)
+                    name: "World Mental Health Day", // Event name (required)
+                    description: "World Mental Health Day",
+                    date: "October/10/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event16", // Event's ID (required)
+                    name: " International Day of the Girl Child", // Event name (required)
+                    description: " International Day of the Girl Child",
+                    date: "October/11/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event17", // Event's ID (required)
+                    name: "Tata Steel Open National Athletics Championship at JRD Tata Sports Complex", // Event name (required)
+                    description: "Tata Steel Open National Athletics Championship at JRD Tata Sports Complex",
+                    date: ["October/11/2023", "October/14/2023"], // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event18", // Event's ID (required)
+                    name: "T-shirt launch for Jamshedpur Run-a-thon", // Event name (required)
+                    description: "T-shirt launch for Jamshedpur Run-a-thon",
+                    date: "October/15/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event19", // Event's ID (required)
+                    name: "PC on Joda Run", // Event name (required)
+                    description: "PC on Joda Run",
+                    date: "October/16/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event20", // Event's ID (required)
+                    name: "World Cities Day", // Event name (required)
+                    description: "World Cities Day",
+                    date: "October/20/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event21", // Event's ID (required)
+                    name: " Home Match of JFC with Punjab", // Event name (required)
+                    description: " Home Match of JFC with Punjab",
+                    date: "October/22/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event22", // Event's ID (required)
+                    name: "Vigilance Awareness Week", // Event name (required)
+                    description: "Vigilance Awareness Week",
+                    date: ["October/26/2023", "October/31/2023"], // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event23", // Event's ID (required)
+                    name: "MEMC Week at Noamundi", // Event name (required)
+                    description: "MEMC Week at Noamundi",
+                    date: "October/30/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event24", // Event's ID (required)
+                    name: " World Habitat Day", // Event name (required)
+                    description: " World Habitat Day",
+                    date: "October/2/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event25", // Event's ID (required)
+                    name: " World Teachers’ Day", // Event name (required)
+                    description: " World Teachers’ Day",
+                    date: "October/5/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event26", // Event's ID (required)
+                    name: " Indian Air Force Day", // Event name (required)
+                    description: " Indian Air Force Day",
+                    date: "October/8/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event27", // Event's ID (required)
+                    name: " World Post Office Day", // Event name (required)
+                    description: " World Post Office Day",
+                    date: "October/9/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event28", // Event's ID (required)
+                    name: " National Post Day, World Mental Health Day", // Event name (required)
+                    description: " National Post Day, World Mental Health Day",
+                    date: "October/10/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event29", // Event's ID (required)
+                    name: " International Day of Girl Child", // Event name (required)
+                    description: " International Day of Girl Child",
+                    date: "October/11/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event30", // Event's ID (required)
+                    name: "World Arthritis Day", // Event name (required)
+                    description: "World Arthritis Day",
+                    date: "October/12/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event31", // Event's ID (required)
+                    name: " International Day for Disaster Reduction           ", // Event name (required)
+                    description: " International Day for Disaster Reduction           ",
+                    date:"October/13/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event32", // Event's ID (required)
+                    name: "  International E-Waste Day", // Event name (required)
+                    description: "  International E-Waste Day",
+                    date:"October/14/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event33", // Event's ID (required)
+                    name: "World Food Day", // Event name (required)
+                    description: "World Food Day",
+                    date:"October/16/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event34", // Event's ID (required)
+                    name: " International Day for the Eradication of Poverty", // Event name (required)
+                    description: "International Day for the Eradication of Poverty",
+                    date: "October/17/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event35", // Event's ID (required)
+                    name: " World Osteoporosis Day, World Statistics Day", // Event name (required)
+                    description: " World Osteoporosis Day, World Statistics Day",
+                    date:"October/20/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event36", // Event's ID (required)
+                    name: "World Polio Day", // Event name (required)
+                    description: "World Polio Day",
+                    date: "October/24/2023", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: false, // Same event every year (optional)
+                  },
+                  {
+                    id: "event37",
+                    name: "Home Match of JFC with Mohun Bagan",
+                    description: "Home Match of JFC with Mohun Bagan",
+                    date: "November/1/2023",
+                    type: "holiday",
+                    everyYear: false,
+                  },
+                  {
+                    id: "event38",
+                    name: "Art in Industry",
+                    description: "Art in Industry",
+                    date: ["November/1/2023", "November/4/2023"],
+                    type: "holiday",
+                    everyYear: false
+                  },
+                  {
+                    id: "event39",
+                    name: "Release of Dr J J Irani Book",
+                    description: "Release of Dr J J Irani Book",
+                    date: "November/4/2023",
+                    type: "holiday",
+                    everyYear: false
+                  },
+                  {
+                    id: "event40",
+                    name: "Jamshedpur Run-a-thon",
+                    description: "Jamshedpur Run-a-thon",
+                    date: "November/5/2023",
+                    type: "holiday",
+                    everyYear: false
+                  },
+                  {
+                    id: "event30",
+                    name: "PC for Samvaad",
+                    description: "PC for Samvaad",
+                    date: "",
+                    type: "holiday",
+                    everyYear: false
+                  },
+                  {
+                    id: "event31",
+                    name: "Apex TQM Nite",
+                    description: "Apex TQM Nite",
+                    date: "November/10/2023",
+                    type: "holiday",
+                    everyYear: false
+                  },
+                  {
+                    id: "event32",
+                    name: "Samvaad",
+                    description: "Samvaad",
+                    date: ["November/15/2023", "November/19/2023"],
+                    type: "holiday",
+                    everyYear: false
+                  },
+                  {
+                    id: "event33",
+                    name: "SHE Excellence Award",
+                    description: "SHE Excellence Award",
+                    date: "November/17/2023",
+                    type: "holiday",
+                    everyYear: false
+                  },
+                  {
+                    id: "event34",
+                    name: "Joda Run-a-thon (10k new)",
+                    description: "Joda Run-a-thon (10k new)",
+                    date: "November/26/2023",
+                    type: "holiday",
+                    everyYear: false
+                  },
+                  {
+                    id: "event35",
+                    name: "Quality Month",
+                    description: "Quality Month",
+                    date: "November/26/2023",
+                    type: "holiday",
+                    everyYear: false
+                  },
+                  {
+                    id: "event36",
+                    name: "Apex TQM Nite",
+                    description: "Apex TQM Nite",
+                    date: "November/26/2023",
+                    type: "holiday",
+                    everyYear: false
+                  },
+                  {
+                    id: "event37",
+                    name: "JWQC Recognition Function",
+                    description: "JWQC Recognition Function",
+                    date: "November/26/2023",
+                    type: "holiday",
+                    everyYear: false
+                  },
+                  {
+                    id: "event38",
+                    name: "Jam@Streets (Sunday)",
+                    description: "Jam@Streets (Sunday)",
+                    date: "November/26/2023",
+                    type: "holiday",
+                    everyYear: false
+                  },
+                  {
+                    id: "event39",
+                    name: "Home Match of JFC with Odisha",
+                    description: "Home Match of JFC with Odisha",
+                    date: "December/1/2023",
+                    type: "holiday",
+                    everyYear: false
+                  },
+                  {
+                    id: "event40",
+                    name: "Triathlon at Jsr",
+                    description: "Triathlon at Jsr",
+                    date: "December/3/2023",
+                    type: "holiday",
+                    everyYear: false
+                  },
+                  {
+                    id: "event41",
+                    name: "Home Match of JFC with Chennaiyan",
+                    description: "Home Match of JFC with Chennaiyan",
+                    date: "December/7/2023",
+                    type: "holiday",
+                    everyYear: false
+                  },
+                  {
+                    id: "event42",
+                    name: "Tata Steel Literary Meets Curtain Raiser, Jamshedpur",
+                    description: "Tata Steel Literary Meets Curtain Raiser, Jamshedpur",
+                    date: "December/7/2023",
+                    type: "holiday",
+                    everyYear: false
+                  },
+                  {
+                    id: "event43",
+                    name: "Jharkhand Literary Meet, Ranchi",
+                    description: "Jharkhand Literary Meet, Ranchi",
+                    date: "December/9/2023",
+                    type: "holiday",
+                    everyYear: false
+                  },
+                  {
+                    id: "event44",
+                    name: "YATS Grand Finale at Bhubaneshwar",
+                    description: "YATS Grand Finale at Bhubaneshwar",
+                    date: "December/13/2023",
+                    type: "holiday",
+                    everyYear: false
+                  },
+                  {
+                    id: "event45",
+                    name: "TSK25K",
+                    description: "TSK25K",
+                    date: "December/17/2023",
+                    type: "holiday",
+                    everyYear: false
+                  },
+                  {
+                    id: "event46",
+                    name: "Tata Open (Pro Am Golf Tournament)",
+                    description: "Tata Open (Pro Am Golf Tournament)",
+                    date: "December/19/2023",
+                    type: "holiday",
+                    everyYear: false
+                  },
+
+                  
+                  {
+                    id: "event47",
+                    name: "PGTI Golf Tournament",
+                    description: "PGTI Golf Tournament",
+                    date: "December/21/2024", // Updated year to 2024
+                    type: "holiday",
+                    everyYear: true // Set everyYear to true
+                  },
+                  {
+                    id: "event48",
+                    name: "Annual Flower Show",
+                    description: "Annual Flower Show",
+                    date: "December/23/2024", // Updated year to 2024
+                    type: "holiday",
+                    everyYear: true // Set everyYear to true
+                  },
+                  {
+                    id: "event49",
+                    name: "Jam@Streets (Sunday)",
+                    description: "Jam@Streets (Sunday)",
+                    date: "December/23/2024", // Updated year to 2024
+                    type: "holiday",
+                    everyYear: true // Set everyYear to true
+                  },
+                  {
+                    id: "event50",
+                    name: "Winter Carnival",
+                    description: "Winter Carnival",
+                    date: "January/4/2024", // Updated year to 2024
+                    type: "holiday",
+                    everyYear: true // Set everyYear to true
+                  },
+                  {
+                    id: "event51",
+                    name: "Bhubaneshwar Literary Meet",
+                    description: "Bhubaneshwar Literary Meet",
+                    date: "January/5/2024", // Updated year to 2024
+                    type: "holiday",
+                    everyYear: true // Set everyYear to true
+                  },
+                  {
+                    id: "event52",
+                    name: "Ranchi Run-a-thon",
+                    description: "Ranchi Run-a-thon",
+                    date: "January/7/2024", // Updated year to 2024
+                    type: "holiday",
+                    everyYear: true // Set everyYear to true
+                  },
+                  {
+                    id: "event53",
+                    name: "Dog Show",
+                    description: "Dog Show",
+                    date: "January/8/2024", // Updated year to 2024
+                    type: "holiday",
+                    everyYear: true // Set everyYear to true
+                  },
+                  {
+                    id: "event54",
+                    name: "Steel City Golf Tournament",
+                    description: "Steel City Golf Tournament",
+                    date: "January/19/2024", // Updated year to 2024
+                    type: "holiday",
+                    everyYear: true // Set everyYear to true
+                  },
+                  {
+                    id: "event55",
+                    name: "Kolkata Literary Meet",
+                    description: "Kolkata Literary Meet",
+                    date: "January/23/2024", // Updated year to 2024
+                    type: "holiday",
+                    everyYear: true // Set everyYear to true
+                  },
+                  {
+                    id: "event56",
+                    name: "BBSR Run-a-thon (half)",
+                    description: "BBSR Run-a-thon (half)",
+                    date: "January/28/2024", // Updated year to 2024
+                    type: "holiday",
+                    everyYear: true // Set everyYear to true
+                  },
+                  {
+                    id: "event57",
+                    name: "Angul Run-a-thon",
+                    description: "Angul Run-a-thon",
+                    date: "February/4/2024",
+                    type: "holiday",
+                    everyYear: true,
+                  },
+                  {
+                    id: "event58",
+                    name: "Vantage Car Rally",
+                    description: "Vantage Car Rally",
+                    date: ["February/24/2024", "February/25/2024"],
+                    type: "holiday",
+                    everyYear: true,
+                  },
+                  {
+                    id: "event59",
+                    name: "AISMOC 2024",
+                    description: "AISMOC 2024",
+                    date: ["February/2/2024", "February/6/2024"],
+                    type: "holiday",
+                    everyYear: true,
+                  },
+                  {
+                    id: "event60",
+                    name: "Jam@Street",
+                    description: "Jam@Street",
+                    date: "February/4/2024",
+                    type: "holiday",
+                    everyYear: true,
+                  },
+                  {
+                    id: "event61",
+                    name: "Jam@Street",
+                    description: "Jam@Street",
+                    date: "February/11/2024",
+                    type: "holiday",
+                    everyYear: true,
+                  },
+                  {
+                    id: "event62",
+                    name: "Jam@Street",
+                    description: "Jam@Street",
+                    date: "February/18/2024",
+                    type: "holiday",
+                    everyYear: true,
+                  },
+                  {
+                    id: "event63",
+                    name: "Jam@Street",
+                    description: "Jam@Street",
+                    date: "February/25/2024",
+                    type: "holiday",
+                    everyYear: true,
+                  },
+                  {
+                    id: "event64",
+                    name: "Founder's Day Celebrations",
+                    description: "Founder's Day Celebrations",
+                    date: ["March/2/2024", "March/5/2024"],
+                    type: "holiday",
+                    everyYear: true,
+                  },
+
+                ],
+              });
+            });
+    </script>
+  </body>
+</html>
